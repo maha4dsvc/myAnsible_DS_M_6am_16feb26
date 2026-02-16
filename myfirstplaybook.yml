@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: task01, install git abc 1234455
+    apt: 
+      name:  git
+      state: present
+    
+  - name: task02, install wget
+    apt: 
+       name: wget
+       state: present
+
+  - name: task03, install tree
+    apt:
+      name: tree
+      state: present
+

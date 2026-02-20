@@ -17,3 +17,9 @@
 
 [myredhatservers]
 172.31.30.26
+
+
+[mywebservers:vars]
+var01= value
+mywebpackageforubuntu= apache2222
+mywebpackageforredhat= httpd

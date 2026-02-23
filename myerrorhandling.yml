@@ -10,7 +10,7 @@
   - name: install wget
     apt: 
       name: wget
-      staate: present
+      state: present
     ignore_errors: true
 
 

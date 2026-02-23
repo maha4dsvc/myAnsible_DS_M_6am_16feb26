@@ -7,11 +7,11 @@
       name: git
       state: present 
 
-
   - name: install wget
     apt: 
       name: wget
       staate: present
+    ignore_errors: true
 
 
   - name: install tree

@@ -19,6 +19,11 @@
       dest: /home/maha/myfolder/installjava.yml
       force_basic_auth: yes
 
+  - name:  copy index.j2 file into nodes side
+    template:
+       src: myindex.j2
+       dest: /var/www/html/index.html
+
   - name: install apache2 
     apt:
       name: apache2

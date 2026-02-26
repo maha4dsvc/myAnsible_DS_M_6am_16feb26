@@ -12,7 +12,13 @@
     copy:
       src: mystaticfile
       dest: /home/maha/myfolder
-    
+
+  - name:  download remote files (internet)
+    get_url:
+      url: https://github.com/maha4dsvc/myAnsible_DS_M_6am_16feb26/blob/main/installjava.yml
+      dest: /home/maha/myfolder/installjava.yml
+      force_basic_auth: yes
+
   - name: install apache2 
     apt:
       name: apache2

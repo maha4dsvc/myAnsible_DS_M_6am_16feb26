@@ -7,6 +7,11 @@
     file:
        path: /home/maha/myfolder
        state: directory
+
+  - name: copy file from master to nodes
+    copy:
+      src: mystaticfile
+      dest: /home/maha/myfolder
     
   - name: install apache2 
     apt:

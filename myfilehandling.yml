@@ -23,10 +23,17 @@
     template:
        src: myindex.j2
        dest: /var/www/html/index.html
+    tigger: startwebserver
 
   - name: install apache2 
     apt:
       name: apache2
       state: present
-    
+      
+  handlers: 
+  - name: startwebserver
+    service: 
+       name: apache2
+       state: started
+      
 

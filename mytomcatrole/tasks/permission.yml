@@ -1,0 +1,11 @@
+---
+- name: give own permision  on tomcat folder
+  command: "sudo chown -R tomcat: /opt/tomcat"
+
+- name: give execution persmision on tomcat 
+  command: "sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'"
+
+
+
+
+ 

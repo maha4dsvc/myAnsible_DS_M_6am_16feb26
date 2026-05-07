@@ -1,7 +1,9 @@
 ---
 - name: deploy java application
   get_url:
-    url: https://maha02mar26.s3.us-east-2.amazonaws.com/login.war
+    url: http://18.217.126.20:8082/artifactory/myUATrepo/login.war
     dest: /opt/tomcat/webapps/login.war
     force_basic_auth: yes
+    url_username:  admin
+    url_password: Maha123maha123
 
